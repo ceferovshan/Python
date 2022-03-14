@@ -1,0 +1,22 @@
+#exception
+import sys
+import math
+print(sys.argv)
+#Faylin adini qaytarir
+
+sayi1 = input("Sayi : ")
+sayi2 = input("Sayi : ")
+try:
+    sayi1 = int(sayi2)
+    if sayi1 == 0:
+        raise ZeroDivisionError
+    sayi2 = int(sayi2)
+    print(sayi1/sayi2)
+except Exception:
+    print('Bilinmeyen bir hata.')
+    #Yaddan cixan osibka olarsa eger bu isleyecek
+else:
+    print("#Eger hec bir sehf olmazsa calisacak Else isleyir")
+    #Eger hec bir sehf olmazsa calisacak
+finally:
+    print("Osibka cixdi cixmadi isleyir")
